@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boost productivity and focus with our Pomodoro Timer app! Manage your time efficiently with customizable work and break intervals, Perfect for students, professionals, and anyone looking to enhance their workflow. Try it now and transform your productivity">
+    <title>F O C U S   T I M E R - POMODORO</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Im using icons from phosphoricons.com-->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    
+    <div class="header">
+        <button class="toggleBtn" id="toggle-mode">
+            <span class="sr-only">Switch on/off</span>
+
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+    </div>
+    <main>
+        <div class="container-content flex">
+            <section class="timer flex">
+                <span id="minutes"></span>
+                <span>:</span>
+                <span id="seconds"></span>
+            </section>
+    
+            <section class="controls-panel flex" id="controls">
+                <button class="ph ph-play-circle" data-action="toggleRunning">
+                    <span class="sr-only">Play Timer</span>
+                </button>
+                <button class="ph ph-pause-circle" data-action="toggleRunning">
+                    <span class="sr-only">Pause Timer</span>
+                </button>
+                <button class="ph ph-timer secondary" data-action="set">
+                    <span class="sr-only">Set Timer</span>
+                </button>
+                <button class="ph ph-stop-circle secondary" data-action="stop">
+                    <span class="sr-only">Stop Timer</span>
+                </button>
+                <button class="ph ph-speaker-none secondary" data-action="musicRunning">
+                    <span class="sr-only">Turn Music Offr</span>
+                </button>
+                <button class="ph ph-speaker-high" data-action="musicRunning">
+                    <span class="sr-only">Turn Music On</span>
+                </button>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
